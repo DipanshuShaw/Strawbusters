@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header class="header">
+        <div id="headname">Residue Rangers</div>
+        <div class = navigate>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="About us.html"><b>About Us</b></a></li>
+                    <li><a href=""><b>Contact</b></a></li>
+                    <li><button href="login.html" target="_blank" id="login"><b>Login</b></button></li>
+                    <li><button href="register.html" target="_blank" id="register"><b>Register</b></button></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <br><br><br>
+                <li><a href="index.html"><b>Home</b></a></li>
+                <li><a href="About us.html"><b>About Us</b></a></li>
+                <li><a href=""><b>Contact</b></a></li>
+                <li><button onclick="location.href= 'login.html'"><b>Login</b></button></li>
+                <li><button onclick="location.href='register.html'"><b>Register</b></button></li>
+            </ul>
+          </div>
+    </header>
+    <img alt="" height="2000px" width="100%">
+    <footer class="footer">
+        <ul>
+            <li><a href="index.html"><b>Home</b></a></li>
+            <li><a href="About us.html"><b>About Us</b></a></li>
+            <li><a href=""><b>Contact</b></a></li>
+            <li><button onclick="location.href= 'login.html'"><b>Login</b></button></li>
+            <li><button onclick="location.href='register.html'"><b>Register</b></button></li>
+        </ul>
+        <p class="links">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="socialmedia"><i
+                    class="fa fa-facebook" style="font-size:36px; color: rgb(53, 53, 203);"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="socialmedia"><i
+                    class="fa fa-instagram" style="font-size:36px; color: rgb(240, 9, 170);"></i></a>
+            <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer" class="socialmedia"><i
+                    class="fa fa-twitter" style="font-size:36px; color: rgb(20, 216, 255);"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="socialmedia"><i
+                    class="fa fa-linkedin" style="font-size:36px; color: rgb(0, 78, 167);"></i></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="socialmedia"><i
+                    class="fa fa-youtube" style="font-size:36px; color: rgb(255, 0, 0);"></i></a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+<script>
+
+function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+
+</script>
+</html>
