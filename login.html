@@ -61,15 +61,27 @@
             font-size: large;
         }
         #button{
-            height: 50px;
+            height: 40px;
             background-color: rgb(129, 184, 223);
             color: #fff;
             font-size: larger;
             font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            
+        }
+        #button:hover{
+            cursor: pointer;
         }
         #register{
             font-size: large;
+        }
+        .button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .button a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     </style>
 </head>
@@ -83,12 +95,11 @@
                 <div class="h3"><input type="password" placeholder="Password" class="input" name="password"></div>
                 <br>
                 <div class="checkbox"><input type="checkbox" name="" id="">Remember Me</div>
-                <div class="h3">
-                    <button type="submit" class="input" id="button">LOGIN</button>
-
+                <div>
+                    <div class="button"><a type="submit" target="_blank" class="input" id="button" onclick="location.href='welcome.html'">LOGIN</a></div>
                 </div>
                 <br>
-                <div class="h3"><a href="" target="_blank"style="color: white" id="register">New User? Register</a></div>
+                <div class="h3"><a href="register.html" target="_blank"style="color: white" id="register">New User? Register</a></div>
             </div>
         </form>
 </body>

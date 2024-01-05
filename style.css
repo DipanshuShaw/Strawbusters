@@ -2,14 +2,15 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(152, 243, 243);
 }
 
 .header{
-    height: 400px;
+    height: 820px;
     background-image: url(ramkumar-radhakrishnan-wikimedia-1622193304-1622193304.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 
@@ -17,7 +18,7 @@ body {
 
 #headname{
     font-size: xx-large;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     display: inline-block;
     position: absolute;
@@ -52,21 +53,20 @@ body {
 }
 
 .navbar li a:hover{
-    color: rgb(204, 204, 204);
-    text-decoration: underline;
+    color: rgb(74, 74, 74);
+    border-bottom: 3px solid rgb(204, 204, 204);
     font-size: larger;
-    transition: 1s;
+    transition:1s;
 }
 
 nav ul li:after{
     content: '';
     width: 0;
-    height: 3px;
-    /* background: rgb(28, 28, 28); */
+    height: 2px;
     position: absolute;
     left: 0;
     bottom: -10px;
-    transition: 0.5s;
+    transition: width 0.5s;
   }
   nav ul li:hover::after{
     width:100%;
@@ -79,28 +79,28 @@ nav ul li:after{
   }
 
   .navbar #login{
-    color: red;
+    color: white;
     border: 2px solid red;
-    background: transparent;
+    background-color: red;
   }
 
   .navbar #login:hover{
     color: white;
-    border: 2px solid red;
-    background-color: red;
+    border: 2px solid rgb(151, 46, 46);
+    background-color: rgb(151, 46, 46);
     transition: all 0.5s ease-in-out;
   }
 
   .navbar #register{
-    color: blue;
+    color: white;
     border: 2px solid blue;
-    background: transparent;
+    background-color: blue;
   }
 
   .navbar #register:hover{
     color: white;
-    border: 2px solid blue;
-    background-color: blue;
+    border: 2px solid rgb(39, 39, 107);
+    background-color: rgb(40, 40, 101);
     transition: all 0.5s ease-in-out;
   }
 
@@ -227,14 +227,24 @@ nav ul li:after{
 }
 
 .container{
-  max-height: 30vh;
-  max-width: 30%;
-  display: inline-block;
-  border: 2px solid green;
+  height: auto;
+  max-height: 250px;
+  width: 800px;
+  max-width: 800px;
+  /* display: inline-block; */
+  /* border: 2px solid rgb(0, 0, 0); */
+  color: rgb(255, 255, 255);
+  padding: 10px;
   margin: 25px;
-  overflow: hidden;
-  font-size: larger;
+  overflow: overflow;
+  font-size: 24px;
+  background-color: rgb(67, 160, 192);
+  box-shadow: 5px 5px  black;
+}
 
+.image {
+  width: 250px;
+  display: inline-block;
 }
 
 .footer{
@@ -261,10 +271,14 @@ footer p.links {
 .socialmedia {
   padding: 0px 20px;
 }
+footer ul{
+  display: inline-block;
+}
 
 .footer li a{
   text-decoration: none;
   color: rgb(255, 255, 255);
+  display: inline-block;
 }
 .footer li{
   list-style: none;
