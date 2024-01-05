@@ -7,7 +7,7 @@ body {
 
 .header{
     height: 400px;
-    background-image: url(RR\ pics\\ramkumar-radhakrishnan-wikimedia-1622193304-1622193304.jpeg);
+    background-image: url(ramkumar-radhakrishnan-wikimedia-1622193304-1622193304.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom-left-radius: 30px;
@@ -226,6 +226,17 @@ nav ul li:after{
 	}
 }
 
+.container{
+  max-height: 30vh;
+  max-width: 30%;
+  display: inline-block;
+  border: 2px solid green;
+  margin: 25px;
+  overflow: hidden;
+  font-size: larger;
+
+}
+
 .footer{
     background-color: rgb(28, 28, 28);
     width: 100%;
@@ -242,7 +253,6 @@ footer p{
 }
 
 footer p.links {
-
   display: flex;
   justify-content: center;
   align-content: center;

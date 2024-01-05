@@ -7,8 +7,8 @@
     <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
         body {
-            background-image: url(RR\ pics\\IMG_20240104_181735.jpg);
-            background-position:center;
+            background-image: url(IMG_20240104_181735.jpg);
+            background-position: center;
             height: auto;
             margin: 0;
             padding: 120px;
@@ -74,13 +74,13 @@
     </style>
 </head>
 <body>
-        <form class="bodylogin">
+        <form class="bodylogin" method="post" action="/login">
             <div class="boxlogin">
                 <div class = "h3" style="padding-bottom: 5px; border-bottom: 4px solid white"><h3>&nbsp;&nbsp;&nbsp;LOGIN&nbsp;&nbsp;&nbsp;</h3></div>
                 <br>
-                <div class="h3"><input type="Username" placeholder="Username" class="input"></div>
+                <div class="h3"><input type="Username" placeholder="Username" class="input" name="username"></div>
                 <br>
-                <div class="h3"><input type="password" placeholder="Password" class="input"></div>
+                <div class="h3"><input type="password" placeholder="Password" class="input" name="password"></div>
                 <br>
                 <div class="checkbox"><input type="checkbox" name="" id="">Remember Me</div>
                 <div class="h3">
