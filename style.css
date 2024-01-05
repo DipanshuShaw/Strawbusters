@@ -247,6 +247,19 @@ nav ul li:after{
   display: inline-block;
 }
 
+.article{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  width: 100%;
+  height: auto;
+}
+
+.article img:hover{
+  box-shadow: 4px 4px black;
+}
+
 .footer{
     background-color: rgb(28, 28, 28);
     width: 100%;
